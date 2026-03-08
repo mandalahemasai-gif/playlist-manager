@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playlist Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Playlist Manager</h1>
+        
+        <h2>Now Playing</h2>
+        <h3 id="current-song">Loading...</h3>
+        <div class="controls">
+            <button onclick="playPrev()">Previous</button>
+            <button onclick="togglePlay()" id="play-btn">Play</button>
+            <button onclick="playNext()">Next</button>
+        </div>
+
+        <h2>Master Library</h2>
+        <button onclick="sortLibrary()">Sort A-Z</button>
+        <ul id="library-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
